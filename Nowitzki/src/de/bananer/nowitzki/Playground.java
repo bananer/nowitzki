@@ -4,6 +4,7 @@ import android.graphics.PointF;
 import android.util.Log;
 
 /**
+ * Contains the games physics, that the Ball and collision checking
  *
  * @author Philip Frank <ich@philipfrank.de>
  */

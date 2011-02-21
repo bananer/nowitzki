@@ -32,12 +32,17 @@ public class Ball {
         speedY += forceY;
     }
 
-    
+    /**
+     * Modifies the Ball according to the time passed
+     */
     private void doMove(double secondsPassed) {
         this.x += speedX * secondsPassed;
         this.y += speedY * secondsPassed;
     }
 
+    /**
+     * Step function
+     */
     public void step(double secondsPassed) {
 
         // apply gravitation
@@ -49,6 +54,9 @@ public class Ball {
 
     }
 
+    /**
+     * Bounce functions, called from Playground
+     */
     public void bouceX() {
         this.speedX = -1f * this.speedX * Ball.bounceX;
     }

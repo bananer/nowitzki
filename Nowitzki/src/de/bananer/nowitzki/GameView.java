@@ -19,7 +19,6 @@ import android.widget.TextView;
  */
 public class GameView extends SurfaceView implements SurfaceHolder.Callback  {
 
-    /** Handle to the application context, used to e.g. fetch Drawables. */
     private Context mContext;
 
     private GameEngine engine;
@@ -51,7 +50,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback  {
         Log.d("view", "GameView created!");
     }
 
-        /**
+    /**
      * Standard override to get key-press events.
      */
     @Override
@@ -101,8 +100,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback  {
 
     /*
      * Callback invoked when the Surface has been destroyed and must no longer
-     * be touched. WARNING: after this method returns, the Surface/Canvas must
-     * never be touched again!
+     * be touched. 
      */
     public void surfaceDestroyed(SurfaceHolder holder) {
         // we have to tell thread to shut down & wait for it to finish, or else
